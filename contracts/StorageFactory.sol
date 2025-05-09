@@ -16,6 +16,7 @@ contract StorageFactory{
     function sfStore(uint _simpleStorageIndex, uint _newSimpleStorageNumber) public{
         SimpleStorage mySimpleStorage = listOfSimpleStorageContract[_simpleStorageIndex];
         mySimpleStorage.store(_newSimpleStorageNumber);
+        
     }
 
     function sfGet(uint _simpleStorageIndex ) public view returns (uint){
